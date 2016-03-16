@@ -1,4 +1,4 @@
-But what is it?
+# What is it?
 
 
 Spring Boot is just an opinionated collection of Spring libraries, with starter kits and command-line runners

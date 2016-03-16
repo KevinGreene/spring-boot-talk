@@ -1,4 +1,6 @@
-### In the beginning (Well, 2004)
+# In the beginning 
+
+...well, 2004
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>```

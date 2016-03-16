@@ -1,4 +1,4 @@
-## An Easy Rest API
+# Rest API
 
 
 Rails can quickly generate a useful REST API. 
