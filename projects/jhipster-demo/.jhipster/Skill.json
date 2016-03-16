@@ -1,0 +1,29 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "employee",
+            "otherEntityName": "employee",
+            "relationshipType": "many-to-many",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "skill"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "type",
+            "fieldType": "SkillType",
+            "fieldValues": "TECHNICAL,SOCIAL,MISC"
+        }
+    ],
+    "changelogDate": "20160316165707",
+    "dto": "no",
+    "service": "no",
+    "pagination": "pager"
+}

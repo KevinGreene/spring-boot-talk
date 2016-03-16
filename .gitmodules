@@ -1,0 +1,9 @@
+[submodule "projects/brewery"]
+	path = projects/brewery
+	url = git@github.com:spring-cloud-samples/brewery.git
+[submodule "projects/fortune-teller"]
+	path = projects/fortune-teller
+	url = git@github.com:spring-cloud-samples/fortune-teller.git
+[submodule "projects/customers-stores"]
+	path = projects/customers-stores
+	url = git@github.com:spring-cloud-samples/customers-stores.git

@@ -1,0 +1,10 @@
+{
+    "jhipsterApp": {
+        "SkillType" : {
+            "null": "",
+            "TECHNICAL": "TECHNICAL",
+            "SOCIAL": "SOCIAL",
+            "MISC": "MISC"
+        }
+    }
+}
