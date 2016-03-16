@@ -80,6 +80,34 @@ Note:
 Uberjars make deploying significantly easier. Spring Boot now embeds a Tomcat container, making everything just work with `java -jar`
 
 
+## Profiles
+
+```
+@Configuration
+@Profile("dev")
+public class StandaloneDataConfig {
+
+    @Bean
+    public DataSource dataSource() {
+        return new EmbeddedDatabaseBuilder()
+            .setType(EmbeddedDatabaseType.HSQL)
+            .addScript("classpath:com/bank/config/sql/schema.sql")
+            .addScript("classpath:com/bank/config/sql/test-data.sql")
+            .build();
+    }
+};
+@Configuration
+@Profile("production")
+public class JndiDataConfig {
+
+    @Bean(destroyMethod="")
+    public DataSource dataSource() throws Exception {
+        Context ctx = new InitialContext();
+        return (DataSource) ctx.lookup("java:comp/env/jdbc/datasource");
+    }
+}```
+
+
 Some great companies threw their weight behind Spring
 
 ![Netflix](images/netflix.png)
